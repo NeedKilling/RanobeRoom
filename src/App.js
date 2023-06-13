@@ -21,19 +21,19 @@ function App(){
       <AuthProvider>
       <Header/>
         <Routes>
-              <Route  path="/" element={<Home/>}/>
-              <Route  path="/Catalog" element={<Catalog/>} exact/>
-              <Route  path="/Profile" element={
+              <Route  path="Home" element={<Home/>}/>
+              <Route  path="Catalog" element={<Catalog/>} exact/>
+              <Route  path="Profile" element={
               
                   <Profile/>
               
               }/>
-              <Route  path="/Popular" element={<Popular/>}/>
-              <Route  path="/Subscription" element={<Subscription/>}/>
-              <Route path='/Book/:id' element={<BookPage/>}/>
-              <Route path='/Book/:id/:name' element={<Text/>}/>
-              <Route path='/LogIn' element={<LogIn/>}/>
-              <Route path='/Register' element={<Register/>}/>
+              <Route  path="Popular" element={<Popular/>}/>
+              <Route  path="Subscription" element={<Subscription/>}/>
+              <Route path='Book/:id' element={<BookPage/>}/>
+              <Route path='Book/:id/:name' element={<Text/>}/>
+              <Route path='LogIn' element={<LogIn/>}/>
+              <Route path='Register' element={<Register/>}/>
           </Routes>
         <Footer/>
       </AuthProvider>
