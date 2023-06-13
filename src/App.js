@@ -21,7 +21,7 @@ function App(){
       <AuthProvider>
       <Header/>
         <Routes>
-              <Route  path="Home" element={<Home/>}/>
+              <Route  path="/" element={<Home/>}/>
               <Route  path="Catalog" element={<Catalog/>} exact/>
               <Route  path="Profile" element={
               
