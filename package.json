@@ -78,7 +78,7 @@
     "server": "node server.js",
     "dev": "concurrently \"npm start\" \"npm run server\""
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "https://ranobe-room.onrender.com/",
   "eslintConfig": {
     "extends": [
       "react-app",

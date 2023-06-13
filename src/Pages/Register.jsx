@@ -100,7 +100,7 @@ let passwordValue = PASSWORD.value
       password,
       userName
     }
-    axios.post('http://localhost:3001/register',newUser)
+    axios.post('https://ranobe-room.onrender.com/register',newUser)
 
     .then(({data})=>{
       setUser({

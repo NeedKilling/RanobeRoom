@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const fetchText = () => (dispatch)=>{
-    axios.get(`http://localhost:3001/text`).then(({data}) =>{
+    axios.get(`https://ranobe-room.onrender.com/text`).then(({data}) =>{
     dispatch(setText(data));
 });
 };

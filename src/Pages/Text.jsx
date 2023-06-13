@@ -20,64 +20,64 @@ function Text() {
     React.useEffect(() => {
           const getText = async()=>{
             if(name === "Немёртвый бывший генерал"){
-              const TEXT = await axios.get(`http://localhost:3001/FormerGeneralIsUndeadKnight`)
+              const TEXT = await axios.get(`https://ranobe-room.onrender.com/FormerGeneralIsUndeadKnight`)
               setTEXT(TEXT.data)
             }else if(name === "Повелитель"){
-              const TEXT = await axios.get(`http://localhost:3001/Overlord`)
+              const TEXT = await axios.get(`https://ranobe-room.onrender.com/Overlord`)
               setTEXT(TEXT.data)
             }else if(name === "Каждый возвращается домой"){
-              const TEXT = await axios.get(`http://localhost:3001/EveryoneElseisaReturnee`)
+              const TEXT = await axios.get(`https://ranobe-room.onrender.com/EveryoneElseisaReturnee`)
               setTEXT(TEXT.data)
             }else if(name === "Поднятие уровня в одиночку"){
-              const TEXT = await axios.get(`http://localhost:3001/Ialonelevelup`)
+              const TEXT = await axios.get(`https://ranobe-room.onrender.com/Ialonelevelup`)
               setTEXT(TEXT.data)
             }else if(name === "Защита Подземелья"){
-              const TEXT = await axios.get(`http://localhost:3001/DungeonDefense`)
+              const TEXT = await axios.get(`https://ranobe-room.onrender.com/DungeonDefense`)
               setTEXT(TEXT.data)
             }else if(name === "Точка зрения Всеведущего читателя"){
-              const TEXT = await axios.get(`http://localhost:3001/OmniscientReadersViewpoint`)
+              const TEXT = await axios.get(`https://ranobe-room.onrender.com/OmniscientReadersViewpoint`)
               setTEXT(TEXT.data)
             }else if(name === "Ранкер который живет второй раз"){
-              const TEXT = await axios.get(`http://localhost:3001/SecondLifeRanker`)
+              const TEXT = await axios.get(`https://ranobe-room.onrender.com/SecondLifeRanker`)
               setTEXT(TEXT.data)
             }else if(name === "Буря Звёздной Войны"){
-              const TEXT = await axios.get(`http://localhost:3001/TempestoftheStellarWar`)
+              const TEXT = await axios.get(`https://ranobe-room.onrender.com/TempestoftheStellarWar`)
               setTEXT(TEXT.data)
             }else if(name === "Добро пожаловать в класс превосходства"){
-              const TEXT = await axios.get(`http://localhost:3001/ClassroomoftheElite`)
+              const TEXT = await axios.get(`https://ranobe-room.onrender.com/ClassroomoftheElite`)
               setTEXT(TEXT.data)
             }else if(name === "Мастер-охотник Kей"){
-              const TEXT = await axios.get(`http://localhost:3001/MasterHunterK`)
+              const TEXT = await axios.get(`https://ranobe-room.onrender.com/MasterHunterK`)
               setTEXT(TEXT.data)
             }else if(name === "Да будет благословен этот прекрасный мир!"){
-              const TEXT = await axios.get(`http://localhost:3001/God'sBlessingonThisWonderfulWorld!`)
+              const TEXT = await axios.get(`https://ranobe-room.onrender.com/God'sBlessingonThisWonderfulWorld!`)
               setTEXT(TEXT.data)
             }else if(name === "Владея Ничем"){
-              const TEXT = await axios.get(`http://localhost:3001/PossessingNothing`)
+              const TEXT = await axios.get(`https://ranobe-room.onrender.com/PossessingNothing`)
               setTEXT(TEXT.data)
             }else if(name === "Злая семейка герцога Грида"){
-              const TEXT = await axios.get(`http://localhost:3001/EvilLike`)
+              const TEXT = await axios.get(`hhttps://ranobe-room.onrender.comEvilLike`)
               setTEXT(TEXT.data)
             }else if(name === "86 — Восемьдесят шесть"){
-              const TEXT = await axios.get(`http://localhost:3001/EightySix`)
+              const TEXT = await axios.get(`https://ranobe-room.onrender.com/EightySix`)
               setTEXT(TEXT.data)
             }else if(name === "Гримгар Пепла и Иллюзий"){
-              const TEXT = await axios.get(`http://localhost:3001/Grimgal`)
+              const TEXT = await axios.get(`https://ranobe-room.onrender.com/Grimgal`)
               setTEXT(TEXT.data)
             }else if(name === "Легендарный механик"){
-              const TEXT = await axios.get(`http://localhost:3001/TheLegendaryMechanic`)
+              const TEXT = await axios.get(`https://ranobe-room.onrender.com/TheLegendaryMechanic`)
               setTEXT(TEXT.data)
             }else if(name === "Рай монстров"){
-              const TEXT = await axios.get(`http://localhost:3001/MonsterParadise`)
+              const TEXT = await axios.get(`https://ranobe-room.onrender.com/MonsterParadise`)
               setTEXT(TEXT.data)
             }else if(name === "Слава Королю!"){
-              const TEXT = await axios.get(`http://localhost:3001/HailTheKing`)
+              const TEXT = await axios.get(`https://ranobe-room.onrender.com/HailTheKing`)
               setTEXT(TEXT.data)
             }else if(name === "Воинственный Бог Асура"){
-              const TEXT = await axios.get(`http://localhost:3001/MartialGodAsura`)
+              const TEXT = await axios.get(`https://ranobe-room.onrender.com/MartialGodAsura`)
               setTEXT(TEXT.data)
             }else if(name === "Первый Орден"){
-              const TEXT = await axios.get(`http://localhost:3001/TheFirstOrder`)
+              const TEXT = await axios.get(`https://ranobe-room.onrender.com/TheFirstOrder`)
               setTEXT(TEXT.data)
             }
             

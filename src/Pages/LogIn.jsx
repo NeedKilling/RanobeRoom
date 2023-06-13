@@ -20,7 +20,7 @@ function LogIn() {
             password: e.target[1].value,
         }
 
-        axios.post('http://localhost:3001/login',newUser)
+        axios.post('https://ranobe-room.onrender.com/login',newUser)
     
         .then(({data})=>{
           setUser({
