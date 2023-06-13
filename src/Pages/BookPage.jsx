@@ -37,7 +37,7 @@ function BookPage() {
         //dispatch(fetchBooksHome());
         //dispatch(fetchBooksPage(id))
         (async () => {
-            const quest = await axios.get(`/book/${id}`)
+            const quest = await axios.get(`https://ranobe-room.onrender.com/book/${id}`)
             setRquest(quest.data)
         })()
         

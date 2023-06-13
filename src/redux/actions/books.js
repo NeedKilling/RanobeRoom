@@ -13,16 +13,16 @@ export const fetchBooksCatalog = (sortBy,sortByBar,sortByBarGenre) => (dispatch)
     })
    
     if(sortByBarGenre === null && sortByBar === null){
-        axios.get(`/book?_sort=${sortBy.type},vievs&_order=${sortBy.order}`).then(({data}) =>{
+        axios.get(`https://ranobe-room.onrender.com/book?_sort=${sortBy.type},vievs&_order=${sortBy.order}`).then(({data}) =>{
         dispatch(setBooks(data))})
     }else if(sortByBar !== null && sortByBarGenre === null){
-        axios.get(`/book?_sort=${sortBy.type},vievs&_order=${sortBy.order}&country=${sortByBar}`).then(({data}) =>{
+        axios.get(`https://ranobe-room.onrender.com/book?_sort=${sortBy.type},vievs&_order=${sortBy.order}&country=${sortByBar}`).then(({data}) =>{
         dispatch(setBooks(data))})
     }else if (sortByBar === null && sortByBarGenre !== null){
-        axios.get(`/book?_sort=${sortBy.type},vievs&_order=${sortBy.order}&genre=${sortByBarGenre}`).then(({data}) =>{
+        axios.get(`https://ranobe-room.onrender.com/book?_sort=${sortBy.type},vievs&_order=${sortBy.order}&genre=${sortByBarGenre}`).then(({data}) =>{
         dispatch(setBooks(data))})
     }else if(sortByBar !== null && sortByBarGenre !== null){
-        axios.get(`/book?_sort=${sortBy.type},vievs&_order=${sortBy.order}&country=${sortByBar}&genre=${sortByBarGenre}`).then(({data}) =>{
+        axios.get(`https://ranobe-room.onrender.com/book?_sort=${sortBy.type},vievs&_order=${sortBy.order}&country=${sortByBar}&genre=${sortByBarGenre}`).then(({data}) =>{
         dispatch(setBooks(data))})
     }
 
@@ -35,7 +35,7 @@ export const fetchBooksProfile = (categorias) => (dispatch)=>{
         type: 'SET_LOADING',
         payload: false,
     })
-    axios.get(`/book?${categorias !== null ? `category=${categorias}` : ''}`).then(({data}) =>{
+    axios.get(`https://ranobe-room.onrender.com/book?${categorias !== null ? `category=${categorias}` : ''}`).then(({data}) =>{
     dispatch(setBooks(data));
 });
 };
@@ -44,13 +44,13 @@ export const fetchBooksHome = () => (dispatch)=>{
         type: 'SET_LOADING',
         payload: false,
     })
-    axios.get(`/book`).then(({data}) =>{
+    axios.get(`https://ranobe-room.onrender.com/book`).then(({data}) =>{
     dispatch(setBooks(data));
 });
 };
 export const fetchBooksPage = (id) => (dispatch)=>{
     console.log(id)
-    axios.get(`/book/${id}`).then(({data}) =>{
+    axios.get(`https://ranobe-room.onrender.com/book/${id}`).then(({data}) =>{
     dispatch(setBookPage(data));
 });
 };

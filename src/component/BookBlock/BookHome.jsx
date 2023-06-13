@@ -1,16 +1,9 @@
 import React from 'react'
 import ProtoTypes from "prop-types"
 import { Link } from 'react-router-dom'
-import {BookMark} from '../../component'
 import star from "../../assets/icons/star.svg"
-import { useDispatch } from 'react-redux'
-import { setCategorias } from '../../redux/actions/filtres'
-
-
 function BookHome({user,id,name,imageurl,subname,rating,description}) {
     
-    
-
   return (
     <div id={"book"} className="book">
         <div className="book-item">

@@ -1,9 +1,6 @@
 import React from 'react';
 
 import Logo from "../assets/img/Logo.svg"
-import profileIcon from "../assets/icons/1.svg"
-import notifications from "../assets/icons/2.svg"
-import bookmark from "../assets/icons/mark.svg"
 import vk from  "../assets/img/VK_Compact_Logo 1.png"
 import telegram from  "../assets/img/telegram.png"
 
