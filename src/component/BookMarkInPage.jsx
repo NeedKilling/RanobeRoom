@@ -1,17 +1,13 @@
 import React from 'react'
-import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { MdOutlineKeyboardDoubleArrowUp} from "react-icons/md"
 
 const BookMarkInPage = React.memo(
     function BookMarkInPage({user,id,name,subName,imageurl,onClickAddBook,onAddedCategorias,activeCategorias}) {
     
-        const items = useSelector(({Profile}) => Profile.items); 
-
         const category = ["Читаю","В планах","Прочитано","Любимое","Брошено"];
     
         const [visibleDrop , setVisibleDrop] = React.useState(false)
-        const DropRef = React.useRef();
         const textRef = React.useRef();
         let [activeDrop, setActiveDrop] = React.useState()
 
@@ -59,15 +55,6 @@ const BookMarkInPage = React.memo(
                 <div className="bookPage_dropdown">
                     
                     <div className='mark'>
-                        {/* // className={
-                        //     ClassNames(
-                        //         activeNameDrop === undefined ? "mark":"",
-                        //         activeNameDrop === "Читаю" ? "mark read":"",
-                        //         activeNameDrop === "В планах" ? "mark inPlan":"",
-                        //         activeNameDrop === "Прочитано" ? "mark viewed":"",
-                        //         activeNameDrop === "Любимое" ? "mark favorite":"",
-                        //         activeNameDrop === "Брошено" ? "mark abandoned":"",
-                        //     )} */}
                         <div onClick={taggleDrop} ref = {textRef} className='text'>
                             {activeNameDrop === undefined ? "Добавить в": activeNameDrop} 
                         </div>
@@ -102,10 +89,7 @@ const BookMarkInPage = React.memo(
                     </div>
                 </Link>
             </>
-        }
-            
-            
-        
+        }   
 </>       
       )
     }

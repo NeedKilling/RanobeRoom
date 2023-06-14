@@ -5,7 +5,7 @@ import {SortBar, Sort, LoadingCatalog} from '../component';
 import BookCatalog from '../component/BookBlock/BookCatalog';
 import { useSelector,useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { fetchBooks, fetchBooksCatalog } from '../redux/actions/books';
+import { fetchBooksCatalog } from '../redux/actions/books';
 import {setSortBy, setSortByBar,setSortByBarGenre} from "../redux/actions/filtres"
 
 function Catalog (){

@@ -10,8 +10,6 @@ function Pagination({id,textForPage,totalTEXT, paginat,nextText,prevText,current
 
     console.log(currentPage)
     
-
-
     const showAfterFirst = currentPage < 5;
     const showBeforeLast = currentPage > pageNumbers.length- 4;
   

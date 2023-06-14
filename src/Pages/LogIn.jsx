@@ -1,5 +1,5 @@
-import React, {  useState } from 'react'
-import { Link ,Navigate,useLocation,useNavigate} from 'react-router-dom'
+import React from 'react'
+import { Link ,useNavigate} from 'react-router-dom'
 import axios from 'axios';
 import {AiFillEye,AiFillEyeInvisible} from "react-icons/ai"
 import { AuthContext } from '../hoc/AuthProvider';
@@ -7,7 +7,6 @@ import { AuthContext } from '../hoc/AuthProvider';
 
 function LogIn() {
     const navigate = useNavigate();
-    const location = useLocation()
     const [icon,setIcon] = React.useState(true)
 
     const {user,setUser} = React.useContext(AuthContext)

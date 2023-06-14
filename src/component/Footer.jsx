@@ -3,7 +3,7 @@ import React from 'react';
 import Logo from "../assets/img/Logo.svg"
 import vk from  "../assets/img/VK_Compact_Logo 1.png"
 import telegram from  "../assets/img/telegram.png"
-
+import { Link } from 'react-router-dom';
 
 function Footer(){
     return(
@@ -21,12 +21,9 @@ function Footer(){
         </div>
 
         <ul className="menu-footer">
-                <li><a href="/Popular" className="menu-footer__link">Популярное</a></li>
-                <li><a href="/Catalog" className="menu-footer__link">Каталог</a></li>
-                <li><a href="/Subscription" className="menu-footer__link">Подписка</a></li>
+                <li><Link to={"/Catalog"}className="menu-footer__link">Каталог</Link></li>
+                <li><Link to={"/Subscription"} className="menu-footer__link">Подписка</Link></li>
         </ul>
-
-        
 
         <div className="сontacts">
             <h3 className="contacts__title">Контакты</h3>

@@ -1,5 +1,4 @@
 import React from 'react'
-import { useSelector } from 'react-redux';
 
 const SortBar = React.memo(function SortBar({country,activeSort,onClickSortBarName,genre,onClickSortBarGenre,activeSortGenre}) {
 

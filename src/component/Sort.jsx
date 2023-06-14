@@ -22,9 +22,7 @@ const Sort = React.memo(function Sort({items,activeSortType,onClickSortType}) {
         const handleOutClick = (e)=>{
             if (e.target !== sortRef.current){
                 setvisibleSort(false)
-            }
-            
-            
+            }    
         }
 
     useEffect(() => {

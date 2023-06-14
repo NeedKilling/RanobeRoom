@@ -1,8 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
-import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import test from "../../assets/img/book.png"
 
 export default function SliderMin ({addedBooksProfile,curentReadBooks}) {
     
@@ -49,12 +47,7 @@ export default function SliderMin ({addedBooksProfile,curentReadBooks}) {
     </div>
             
         </div>
-            
-          
         );
-      
-    
-    
 }
 
     

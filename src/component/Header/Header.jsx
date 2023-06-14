@@ -27,7 +27,6 @@ function Header(){
         navigate('/')
     }
 
-///////////////////////
     const DropRef = React.useRef(); 
     const [dropActive,setDropActive] = React.useState(false)
     const taggleDrop = () => {
@@ -42,7 +41,6 @@ function Header(){
     React.useEffect(() => {
         document.addEventListener('click' , handleOutClick);
     },[]);
-
 
     const {theme,setTheme} = useTheme()
 
@@ -61,17 +59,13 @@ function Header(){
         }  
     }
 
-
-
     const HandleSwitchDark = () =>{
         setTheme('dark')
     }
     const HandleSwitchLight = () =>{
         setTheme('light')
     }
-
-
-   
+  
 const {totalCount} = useSelector(({Profile}) => ({
     totalCount: Profile.totalCount,
 }))
@@ -90,15 +84,6 @@ const {totalCount} = useSelector(({Profile}) => ({
         setValueSearh('')
    }
 
-
-//////////////////////////
-    
-
-   
-
-   
-   
-
 return(
     <div>
 <header className="js-header">
@@ -106,7 +91,6 @@ return(
         <nav className="nav">
             <Link to="/"><div className="logo"><img src={Logo} alt="logo"></img></div></Link>
             <ul className="menu">
-                <li><Link to="/Popular"><div className="menu_link">Популярное</div></Link></li>
                 <li><Link to="/Catalog"><div className="menu_link">Каталог</div></Link></li>
                 <li><Link to="/Subscription"><div className="menu_link">Подписка</div></Link></li>
             </ul>
@@ -136,10 +120,8 @@ return(
                                 ))
                             }
                         </ul>
-                    
                 </form>
-            </div>
-               
+            </div>       
            <div className='wrapper'>
                 <div className='switchTheme'>
                         <div onClick={HandleSwitchDark} 
@@ -151,7 +133,6 @@ return(
                     
                     {
                     user.email ? 
-                        
                             <div  className='dropdown-profile'>
                                     <img ref = {DropRef} onClick={taggleDrop} src={profileAvatar} alt="avatar_none"></img>
                                     <div className='dropdown-profile_counter'>{total.length}</div>
@@ -159,7 +140,6 @@ return(
                                             dropActive &&
                                                 <div  className="dropdown-content">
                                                     <Link to="/Profile"><div className="dropdown-content__item"><AiOutlineUser/>Профиль</div></Link>
-                                                    {/* <div  className="dropdown-content__item"><img src={bookmark} alt=""></img>Закладки</div> */}
                                                     <div className="dropdown-content__item line"></div>
                                                     <div onClick = {logOutUser} className="dropdown-content__item btn">{<ImExit/>}<span>Выйти</span></div>
                                                 </div>
@@ -171,18 +151,11 @@ return(
                             <div className='login_img'><CiUser/></div>
                             <div className='login_text'>Войти</div>
                         </Link>
-                    }
-                     
-                      
-            </div>     
-            
-            
-            
+                    }               
+            </div>        
         </nav>
     </div>
-    
 </header>
-
 </div>
 
 );

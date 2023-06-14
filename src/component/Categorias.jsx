@@ -1,5 +1,4 @@
-import React,{ useState } from 'react'
-
+import React from 'react'
 
 const Categorias = React.memo(
   function Categorias ({activeCategorias,items,onClickItem}){

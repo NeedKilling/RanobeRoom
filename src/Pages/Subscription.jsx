@@ -14,7 +14,7 @@ function Subscription(){
                         <div class="tarif_item">
                             <div class="title">Бронза</div>
                             <div class="description">
-                                <div class="value">200 руб.</div>
+                                <div class="value">150 руб.</div>
                                 <div class="term">1 месяц</div>
                                 
                             </div>
@@ -23,7 +23,7 @@ function Subscription(){
                         <div class="tarif_item">
                             <div class="title">Сербро</div>
                             <div class="description">
-                                <div class="value">550 руб.</div>
+                                <div class="value">400 руб.</div>
                                 <div class="term">3 месяца</div>
                                 
                             </div>
@@ -32,7 +32,7 @@ function Subscription(){
                         <div class="tarif_item">
                             <div class="title">Золото</div>
                             <div class="description">
-                                <div class="value">1900 руб.</div>
+                                <div class="value">1500 руб.</div>
                                 <div class="term">1 год</div>
                                 
                             </div>

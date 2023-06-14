@@ -1,8 +1,7 @@
 import React from 'react';
-import axios from 'axios'
 import {Routes,Route} from 'react-router-dom'
-import {useSelector,useDispatch} from 'react-redux'
-import {fetchBooks} from './redux/actions/books';
+import {useDispatch} from 'react-redux'
+
 
 import {Header, Footer} from './component';
 import { Home, Profile, Catalog, Popular, Subscription,BookPage,Text, LogIn, Register} from './Pages'; 
@@ -46,17 +45,3 @@ function App(){
 
 
 export default App;
-
-// const mapStateToProps = (state) =>{
-//   return{
-//     items: state.Books.items,
-//     filtres: state.filtres
-//   }
-// }
-
-// const mapDispatchToProps ={
-// setBooksAction  
-
-// }
-
-// export default connect(mapStateToProps, mapDispatchToProps)(App);

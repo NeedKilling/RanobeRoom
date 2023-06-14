@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 function BookCatalog({name,subname,imageurl}) {
 
   return (
