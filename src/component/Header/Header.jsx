@@ -91,6 +91,7 @@ return(
         <nav className="nav">
             <Link to="/"><div className="logo"><img src={Logo} alt="logo"></img></div></Link>
             <ul className="menu">
+                <li><Link to="/Home"><div className="menu_link">Главная</div></Link></li>
                 <li><Link to="/Catalog"><div className="menu_link">Каталог</div></Link></li>
                 <li><Link to="/Subscription"><div className="menu_link">Подписка</div></Link></li>
             </ul>
