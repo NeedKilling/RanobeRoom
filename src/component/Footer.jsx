@@ -21,7 +21,7 @@ function Footer(){
         </div>
 
         <ul className="menu-footer">
-                <li><Link to={"/Home"}className="menu-footer__link">Главная</Link></li>
+                <li><Link to={"/"}className="menu-footer__link">Главная</Link></li>
                 <li><Link to={"/Catalog"}className="menu-footer__link">Каталог</Link></li>
                 <li><Link to={"/Subscription"} className="menu-footer__link">Подписка</Link></li>
         </ul>
