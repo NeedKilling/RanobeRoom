@@ -34,7 +34,7 @@ export default function SliderMin ({addedBooksProfile,curentReadBooks}) {
         <Slider {...settings}>
             {
                 addedBooksProfile.map(obj => (
-                <Link to = {`/Book/${obj.id}`}>
+                <Link to = {`/Book/${obj.id}/${obj.name}`}>
                     <div  className="book">
                         <div className="book_img"><img src={obj.imageurl} alt="book"></img></div>
                         <div className="book_name">{obj.name}</div>
