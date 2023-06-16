@@ -57,6 +57,21 @@ function Subscription(){
                               <td></td>
                               <td><div class="pip"></div></td>
                               <td><div class="pip"></div></td>
+                              <td><div class="pip"></div></td>
+                            </tr>
+                            <tr>
+                              <td>Бонусные донатные главы</td>
+                              <td></td>
+                              <td></td>
+                              <td><div class="pip"></div></td>
+                              <td><div class="pip"></div></td>
+                            </tr>
+                            <tr>
+                              <td>Расширение читалки</td>
+                              <td></td>
+                              <td></td>
+                              <td><div class="pip"></div></td>
+                              <td><div class="pip"></div></td>
                             </tr>
                             <tr>
                               <td>Лейбл</td>
