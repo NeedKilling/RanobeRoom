@@ -54,7 +54,6 @@ function Subscription(){
                             <tr>
                               <td>Gif - аватар</td>
                               <td></td>
-                              <td></td>
                               <td><div class="pip"></div></td>
                               <td><div class="pip"></div></td>
                               <td><div class="pip"></div></td>
