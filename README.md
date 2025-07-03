@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+
+
+"Сайт для чтения новелл (тестовая версия). Для запуска проекта сначала необходимо запустить [JSON-сервер](ranobe-room.onrender.com) и дождаться его загрузки, а затем перейти на сам [сайт](ranoberoom.onrender.com)."
+
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
